@@ -8,4 +8,29 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="Style_ForEditText">
+        android:layout_height="40dp"
+        android:layout_width="fill_parent"
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:textColor">@color/AppThemeColor</item>
+        <item name="android:textColorHighlight">@color/AppThemeColor</item>
+        <item name="android:backgroundTint">@color/AppThemeColor</item>
+        <item name="android:textColorHint">@color/AppThemeColor</item>
+        <item name="android:textColorLink">@color/AppThemeColor</item>
+   </style>
+
+    <style name="Style_ForRoundedButton">
+        android:layout_height="40dp"
+        android:layout_width="fill_parent"
+        <item name="android:layout_height">44dp</item>
+        <item name="android:textColor">@color/black_color</item>
+        <item name="android:textColorHighlight">@color/AppThemeColor</item>
+        <item name="android:backgroundTint">@color/AppThemeColor</item>
+        <item name="android:textColorHint">@color/AppThemeColor</item>
+        <item name="android:textColorLink">@color/AppThemeColor</item>
+    </style>
+
+
+
 </resources>

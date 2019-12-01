@@ -15,7 +15,7 @@
         android:maxWidth="500px"
         android:src="@drawable/rbpng"
         android:layout_centerVertical="true"
-        android:scaleType="centerInside"
+        android:scaleType="center"
 
         />
 </RelativeLayout>

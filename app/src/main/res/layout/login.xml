@@ -7,83 +7,92 @@
 
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:maxWidth="500px"
-        android:maxHeight="500px"
-        android:scaleType="centerInside"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
         android:src="@drawable/rbpng"
-
-        />
+        android:scaleType="center"
+        android:id="@+id/logo"
+     />
 
     <EditText
-        android:id="@+id/editText"
-        android:layout_width="285dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginStart="61dp"
-        android:layout_marginLeft="61dp"
-        android:layout_marginTop="350dp"
-        android:layout_marginRight="65dp"
-        android:backgroundTint="#7ed957"
+        style="@style/Style_ForEditText"
+        android:id="@+id/edtMobile"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="32dp"
+        android:layout_marginBottom="0dp"
+        android:layout_below="@+id/logo"
         android:focusable="true"
-        android:hint="Mobile Number"
-        android:textColor="#7ed957"
-        android:textColorHighlight="#7ed957"
-        android:textColorHint="#7ed957"
-        android:textColorLink="#7ed957" />
+        android:hint="Mobile number"/>
 
     <EditText
-        android:id="@+id/editText2"
-        android:layout_width="285dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/editText"
-        android:layout_alignEnd="@+id/editText"
-        android:layout_alignRight="@+id/editText"
-        android:layout_alignParentLeft="true"
-        android:layout_marginStart="61dp"
-        android:layout_marginLeft="61dp"
-        android:layout_marginTop="34dp"
-        android:layout_marginEnd="-10dp"
-        android:layout_marginRight="-10dp"
-        android:backgroundTint="#7ed757"
+        style="@style/Style_ForEditText"
+        android:id="@+id/edtPassword"
+        android:layout_below="@+id/edtMobile"
+        android:layout_alignLeft="@id/edtMobile"
+        android:layout_alignRight="@id/edtMobile"
         android:ems="10"
         android:hint="Password"
-        android:inputType="textPassword"
-        android:textColor="#7ed957"
-        android:textColorHighlight="#7ed957"
-        android:textColorHint="#7ed957"
-        android:textColorLink="#7ed957" />
+        android:inputType="textPassword"/>
 
     <Button
+        android:id="@+id/btnForgotPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="210dp"
-        android:layout_marginTop="480dp"
-        android:id="@+id/button1"
-        android:background="black"
-        android:capitalize="none"
+        android:layout_below="@+id/edtPassword"
+        android:layout_alignRight="@id/edtPassword"
+        android:layout_marginTop="0dp"
+        android:background="@color/black_color"
         android:text="Forgot Password?"
-        android:textColor="#7ed957"
-        android:textColorHighlight="#7ed957"
-        android:textColorHint="#7ed957"
-        android:textColorLink="#7ed957" />
+        android:textAllCaps="false"
+        android:textColor="@color/AppThemeColor" />
+
+
 
     <Button
-        android:id="@+id/button2"
+        style="@style/Style_ForRoundedButton"
+        android:id="@+id/btnLogin"
         android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_marginLeft="160dp"
-        android:layout_marginTop="560dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:layout_marginTop="32dp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:layout_below="@id/btnForgotPassword"
         android:background="@drawable/roundbutton"
-        android:ellipsize="none"
         android:text="Login"
-        android:textColor="#000000"
-        android:textColorHighlight="#7ed957"
-        android:textColorHint="#7ed957"
-        android:textColorLink="#7ed957" />
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="30dp"
+        android:layout_below="@id/btnLogin"
+        android:layout_marginTop="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account? "
+        android:textColor="@color/AppThemeColor"
+        />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/black_color"
+        android:text=" Sign Up"
+        android:gravity="left"
+        android:textAllCaps="false"
+        android:textColor="@color/AppThemeColor" />
+
+    </LinearLayout>
+
+
+
+
 
 
 
