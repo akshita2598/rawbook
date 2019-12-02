@@ -20,7 +20,6 @@
         style="@style/Style_ForEditText"
         android:id="@+id/edtMobile"
         android:layout_centerHorizontal="true"
-        android:layout_margin="32dp"
         android:layout_marginBottom="0dp"
         android:layout_below="@+id/logo"
         android:focusable="true"
@@ -30,9 +29,8 @@
         style="@style/Style_ForEditText"
         android:id="@+id/edtPassword"
         android:layout_below="@+id/edtMobile"
-        android:layout_alignLeft="@id/edtMobile"
-        android:layout_alignRight="@id/edtMobile"
         android:ems="10"
+        android:layout_marginTop="32dp"
         android:hint="Password"
         android:inputType="textPassword"/>
 
@@ -83,17 +81,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/black_color"
-        android:text=" Sign Up"
+        android:text="@string/register"
+        android:onClick="signUpAct"
         android:gravity="left"
         android:textAllCaps="false"
         android:textColor="@color/AppThemeColor" />
 
     </LinearLayout>
-
-
-
-
-
-
 
 </RelativeLayout>

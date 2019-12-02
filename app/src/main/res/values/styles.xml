@@ -18,7 +18,10 @@
         <item name="android:backgroundTint">@color/AppThemeColor</item>
         <item name="android:textColorHint">@color/AppThemeColor</item>
         <item name="android:textColorLink">@color/AppThemeColor</item>
-   </style>
+        <item name="android:layout_marginLeft">32dp</item>
+        <item name="android:layout_marginRight">32dp</item>
+
+    </style>
 
     <style name="Style_ForRoundedButton">
         android:layout_height="40dp"

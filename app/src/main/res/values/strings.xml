@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">RawBook</string>
+    <string name="underlined_dynamic_text_and_bold"><u>%s</u></string>
+    <string name="register"><u><b><i>Register</i></b></u></string>
 </resources>

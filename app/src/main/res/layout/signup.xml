@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="72dp"
+            android:src="@drawable/rbpng"
+            android:scaleType="center"
+            android:id="@+id/logo"
+            />
+
+        <EditText
+            style="@style/Style_ForEditText"
+            android:id="@+id/edtName"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="32dp"
+            android:layout_marginBottom="0dp"
+            android:layout_below="@+id/logo"
+            android:focusable="true"
+            android:hint="Name"/>
+
+         <EditText
+                style="@style/Style_ForEditText"
+                android:id="@+id/edtEmailAddress"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/edtName"
+                android:focusable="true"
+             android:hint="Email Address"/>
+
+         <EditText
+                style="@style/Style_ForEditText"
+                android:id="@+id/edtMobile"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"
+                android:layout_below="@+id/edtEmailAddress"
+                android:focusable="true"
+                android:hint="Mobile number"/>
+
+        <EditText
+            style="@style/Style_ForEditText"
+            android:id="@+id/edtPassword"
+            android:layout_below="@+id/edtMobile"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"/>
+
+
+            <EditText
+                style="@style/Style_ForEditText"
+                android:id="@+id/edtConfPassword"
+                android:layout_below="@+id/edtPassword"
+                android:layout_marginTop="32dp"
+                android:ems="10"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"/>
+
+
+
+        <Button
+            style="@style/Style_ForRoundedButton"
+            android:id="@+id/btnSignUp"
+            android:layout_width="100dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp"
+            android:layout_marginTop="32dp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:layout_below="@id/edtConfPassword"
+            android:background="@drawable/roundbutton"
+            android:text="SignUp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="30dp"
+            android:layout_below="@id/btnSignUp"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account? "
+                android:textColor="@color/AppThemeColor"
+             />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/black_color"
+                android:text="Login"
+                android:gravity="left"
+                android:textAllCaps="false"
+                android:textColor="@color/AppThemeColor" />
+
+        </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
